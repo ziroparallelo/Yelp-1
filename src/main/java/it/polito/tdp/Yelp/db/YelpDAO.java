@@ -60,6 +60,7 @@ public class YelpDAO {
 			ResultSet res = st.executeQuery();
 			res.first();
 			double stars = res.getDouble("avg_stars") ;
+			
 			conn.close();
 			return stars ;
 		} catch (SQLException e) {

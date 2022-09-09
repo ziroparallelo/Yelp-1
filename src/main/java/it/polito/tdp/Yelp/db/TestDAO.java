@@ -13,7 +13,7 @@ public class TestDAO {
 		System.out.println(businesses.size());
 
 		long startTime = System.nanoTime();
-		List<Double> allStars = new ArrayList<>();
+		List<Double> allStars = new ArrayList<Double>();
 		for (Business b : businesses) {
 			double stars = dao.averageStars(b);
 			allStars.add(stars);
